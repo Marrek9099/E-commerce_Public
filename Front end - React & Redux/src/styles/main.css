@@ -1,0 +1,222 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+a:hover {
+    color: white;
+}
+
+nav{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+nav .logo {
+    color:#48a61f;
+}
+
+nav .searchField {
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 80%;
+    margin: auto;
+}
+
+nav .searchField input{
+    border: 1px solid black;
+    
+}
+
+nav .searchField button {
+    color: black;  
+    font-weight: bold;
+}
+
+
+nav .searchField button:hover{
+    background-color: #48a61f;  
+    color: white;
+}
+
+nav .basket {
+    color:#48a61f;
+}
+
+nav .basket span{
+   font-size: 15px;
+}
+
+#addToCart {
+    background-color: #48a61f;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    border: 1px solid white;
+
+}
+
+#addToCart:hover {
+    background-color: #54ae2d;
+}
+
+#addToCart i {
+    font-size: 1.4rem;
+    padding: 0 32px 0 32px;
+}
+
+#landingPage .categories {
+    height: 100vh;
+    border-right: 1px solid rgba(0, 0, 0, 0.13);
+}
+
+#landingPage .categoryItem {
+    text-align: left;
+    padding: 5px 0 5px 10px;
+    cursor: pointer;
+}
+
+#landingPage .categoryItem:hover {
+   background-color: rgba(184, 202, 211, 0.335);
+   border-radius: 5px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+#landingPage .selected {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+#landingPage .selected:hover {
+    background-color: black;
+    color: white;
+}
+
+#landingPage .productImage {
+    height: 120px;
+    width: auto;
+}
+
+.productName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+#productDetails .productImage {
+    height: 400px;
+    width: auto;
+    border: 1px solid rgba(184, 202, 211, 0.335);
+    border-radius: 5px;
+}
+
+#productDetails .details {
+    text-align: left;
+}
+
+#productDetails .price {
+    font-size: 1.2rem;
+    color: white;
+    padding: 7px 0 7px 14px;
+    background-color:#48a61f;
+    width: 90%;
+}
+
+#productDetails .priceLabel{
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    width: 90%;
+    padding: 2px 0 2px 14px;
+}
+
+#productDetails .quantity, .totalPrice {
+    margin-right: 2rem;
+}
+
+#basket .actionItem {
+    cursor: pointer;
+}
+
+#basket .quantity {
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+#basket .basketItem {
+    border-top: 0.5px solid black;
+    border-bottom: 0.5px solid black;
+}
+
+#basket .sectionTitle {
+    text-align: left;
+    padding: 30px;
+    background-color: rgb(235, 235, 235);
+    font-weight: bold;
+    letter-spacing: 1px;  
+}
+
+#basket .sectionTitle p {
+    font-size: 0.6rem;
+    font-weight: normal;
+}
+
+#basket .basketImage {
+    height: 100px;
+    width: auto;
+}
+
+#basket .emptyBasket i {
+    font-size: 12rem;
+    color: #48a61f;
+}
+
+#basket .summary {
+    border-radius: 10px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+#basket .summary button {
+    background-color: #48a61f;
+    width: 90%;
+}
+
+
+@media only screen and (max-width: 760px) {
+    #landingPage .searchField {
+        width: 100%;
+       
+    }
+
+    #landingPage .categoryItem {
+        text-align: center;
+    }
+
+    #landingPage .categories {
+        height: 100%;
+    }
+
+
+    #productDetails .productImage {
+        height: 200px;
+        width: auto;
+     
+    }
+
+    #basket .summary {
+        width: 98%;
+        border: none;
+    }
+    
+ }
